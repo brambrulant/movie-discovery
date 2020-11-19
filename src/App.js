@@ -3,11 +3,12 @@ import DiscoverMoviesPage from "./pages/DiscoverMoviesPage";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
 import Navbar from "./pages/NavBar";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">...</header>
+      <header className="App-header">IMDPEE</header>
       <Navbar />
       <Switch>
         <Route path="/discover" component={DiscoverMoviesPage} />
