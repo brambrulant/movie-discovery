@@ -1,5 +1,5 @@
 import Axios from "axios";
-import React, { useState, useHistory } from "react";
+import React, { useState } from "react";
 
 export default function DiscoverMoviesPage() {
   const [searchText, set_searchText] = useState("");

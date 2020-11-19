@@ -1,4 +1,4 @@
-import { Switch, Route, Router } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import DiscoverMoviesPage from "./pages/DiscoverMoviesPage";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
