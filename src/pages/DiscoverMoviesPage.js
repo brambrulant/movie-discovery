@@ -24,7 +24,6 @@ export default function DiscoverMoviesPage() {
       console.log("do i get to error?: ", error);
     }
   };
-
   return (
     <div>
       <h1>Discover some movies!</h1>
@@ -38,7 +37,14 @@ export default function DiscoverMoviesPage() {
       <p>
         {error ? <p>movie not found</p> : null}
         {searchResult.map((result) => {
-          return <li>{`${result.Title} Year of release: ${result.Year}`}</li>;
+          return (
+            <li>
+              {`${result.Title} Year of release: ${result.Year}`}{" "}
+              <p>
+                <img src={result.Poster} alt="movieposter" />
+              </p>
+            </li>
+          );
         })}
       </p>
     </div>
