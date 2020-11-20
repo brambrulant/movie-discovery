@@ -64,7 +64,10 @@ export default function DiscoverMoviesPage() {
               >{`${result.Title} (${result.Year})`}</Link>
 
               <p>
-                <img src={result.Poster} alt="movieposter" />
+                <img
+                  src={result.Poster}
+                  alt={`Movie Poster: ${result.Title} `}
+                />
               </p>
             </ul>
           );
